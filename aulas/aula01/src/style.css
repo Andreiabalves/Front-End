@@ -1,0 +1,65 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    --cor-primaria: #0084ff93;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+main > img {
+    height: 10rem;
+    width: 10rem;
+    margin: 0 auto;
+}
+
+main > h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+main > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+main > input[type=number], input[type=password] {
+    border: 1px solid #0384ff;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+main > button {
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: 0.5rem;
+    color:#0384ff;
+    padding: 0.5rem;
+}
+
+@media (min-width:768px) {
+    main {
+        border: 1px solid var(--cor-primaria);
+        margin: 3rem auto;
+        max-width: 400px;
+    }
+}
